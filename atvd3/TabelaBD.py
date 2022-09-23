@@ -11,9 +11,9 @@ class TabelaBD(Tabela):
             i = self.cabecalho.index(valor)
             for linha in self.dados:
                 if linha[i] in dicionario:
-                    dicionario[linha[i]]+=1
+                    dicionario[linha[i]] += 1
                 else:
-                    dicionario[str(linha[i])] = 1
+                    dicionario[linha[i]] = 1
             for linha in dicionario:
                 arr = [linha, dicionario[linha]]
                 linha_tabela = Linha()

@@ -53,7 +53,7 @@ class Tabela:
   def __str__(self):
     s = ""
     s+= str(self.cabecalho) +"\n"
-    s+="---------------------------------------\n"
+    s+="------------------\n"
     for dado in self.dados:
       s+=str(dado)+"\n"
     
