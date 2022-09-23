@@ -7,6 +7,9 @@ from Linha import Linha
 import json
 
 class Tabela:
+  cabecalho = Linha()
+  dados = []
+
   def __init__(self, arq=""):
     if arq != "":
         arq_open = open((arq), 'r+', encoding="utf8")
@@ -41,7 +44,7 @@ class Tabela:
       return len(self.dados)
 
   def writeFile(self, arq):
-      file = open(arq, "w+")
+      file = open(arq, "w+", encoding="utf8")
       s = ""
       s+= str(self.cabecalho) +"\n"
       for dado in self.dados:

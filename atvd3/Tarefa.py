@@ -142,3 +142,29 @@ print(result)
 # ['camaro', 6]
 # ['moby', 7]
 # ['onix', 11]
+#
+# No exemplo a seguir, são selecionados todas as linhas em cadidatos,
+# cujo partido seja igual a PR.
+result = candidatos.select("Partido", "PV")
+print(result)
+# Veja o resultado abaixo:
+# ['Nome', 'Partido', 'Número']
+# ------------------------------
+# ['Adalberto Maluf', 'PV', 4344]
+# ['Henri Esses', 'PV', 4318]
+# ['Julio Ferraz', 'PV', 4300]
+# ['Márcia Rebeschini', 'PV', 4377]
+# ['Mônica Buava Mandato Animal', 'PV', 4366]
+# ['Patricia Vedrano', 'PV', 4310]
+# ['Piauilino', 'PV', 4355]
+# ['Raulf Naure', 'PV', 4388]
+# ['Regina Gonçalves', 'PV', 4343]
+# ['Ricardo Melenchon Viva Verde', 'PV', 4334]
+# ['Thame', 'PV', 4342]
+# ['Veterinário Wilson Grassi', 'PV', 4330]
+#
+# O comando abaixo salva o resultado em um arquivo e depois carrega novamnte
+
+result.writeFile("candidatosPV.txt")
+candidatosPV = TabelaBD("candidatosPV.txt")
+print(candidatosPV)

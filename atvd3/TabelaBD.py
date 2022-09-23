@@ -21,4 +21,15 @@ class TabelaBD(Tabela):
                 resultado.addLinha(linha_tabela)
             resultado.ordena_por("numero")
             return resultado
-            
+
+    def select(self, chave, valor):
+        if chave in self.cabecalho:
+            resultado = Tabela()
+            resultado.cabecalho = self.cabecalho
+            i = self.cabecalho.index(chave)
+            for linha in self.dados:
+                if valor in linha[i]:
+                    linha_tabela = Linha()
+                    linha_tabela.append(linha)
+                    resultado.addLinha(linha_tabela)
+            return resultado

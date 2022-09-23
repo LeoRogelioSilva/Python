@@ -20,6 +20,7 @@ class Linha:
 
   def __str__(self):
     return str(self.dados)
+    
   def __repr__(self):
     return str(self.dados)
 

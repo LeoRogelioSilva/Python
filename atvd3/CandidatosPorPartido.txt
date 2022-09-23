@@ -22,7 +22,7 @@
 ['MDB', 66]
 ['AGIR', 66]
 ['PROS', 66]
-['Uni„o', 69]
+['Uni√£o', 69]
 ['Republicanos', 69]
 ['PRTB', 69]
 ['PSB', 70]
