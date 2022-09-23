@@ -25,10 +25,10 @@ class TabelaBD(Tabela):
     def select(self, chave, valor):
         if chave in self.cabecalho:
             resultado = Tabela()
-            resultado.cabecalho = self.cabecalho
+            resultado.add_cabecalho(self.cabecalho)
             i = self.cabecalho.index(chave)
             for linha in self.dados:
-                if valor in linha[i]:
+                if valor == linha[i]:
                     linha_tabela = Linha()
                     linha_tabela.append(linha)
                     resultado.addLinha(linha_tabela)

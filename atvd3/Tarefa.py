@@ -142,6 +142,23 @@ print(result)
 # ['camaro', 6]
 # ['moby', 7]
 # ['onix', 11]
+
+# O proximo método a ser implementado na classe TabelaBD é o método select.
+# Este método recebe o cabeçalho de uma coluna e um valor. O resultado são
+# todas as linhas em que a coluna escolhida tenha o valor dado. O resultado
+# também é uma tabela.
+# No exemplo abaixo, são selecionados todos os carros cujo ano seja 2015.
+result = carros.select("ano", 2015)
+print(result)
+#
+# Veja o resultado abaixo
+# ['placa', 'ano', 'marca', 'modelo']
+# ------------------------------------
+# ['QNS7Y56', 2015, 'fiat', 'argo']
+# ['HNX7T11', 2015, 'chevrolet', 'onix']
+# ['IIO2T74', 2015, 'chevrolet', 'onix']
+# ['RMB9U12', 2015, 'chevrolet', 'camaro']
+# ['AUS1U85', 2015, 'fiat', 'pulse']
 #
 # No exemplo a seguir, são selecionados todas as linhas em cadidatos,
 # cujo partido seja igual a PR.

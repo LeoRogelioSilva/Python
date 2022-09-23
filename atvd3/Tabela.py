@@ -24,8 +24,8 @@ class Tabela:
         self.dados=[]
 
 
-  def add_cabecalho(self, cab):
-    self.cabecalho.append(cab)
+  def add_cabecalho(self, linha_cabecalho):
+    self.cabecalho = linha_cabecalho
 
   def addLinha(self,novo):
     if len(novo) != len(self.cabecalho):
