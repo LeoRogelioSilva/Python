@@ -1,3 +1,9 @@
+#TAREFA Tabelas Parte II 
+#INTEGRANTES DO GRUPO:
+#Davi Pereira Bergamin 169753
+#Felipe Araujo Santos Pinto 169401
+#Leonardo Rogelio da Silva 177346
+
 from Tabela import Tabela
 from TabelaBD import TabelaBD
 from Linha import Linha
